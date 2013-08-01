@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var file = fs.readFileSync('contact.html',encoding = 'utf8');
+var file = fs.readFileSync('index.html',encoding = 'utf8');
 
 app.get('/', function(request, response) {
   response.send(file);
